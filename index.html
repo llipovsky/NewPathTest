@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>NewPath</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF8">
+        <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/applicationStyle.css" />
+	<link rel="stylesheet" href="css/jqm-icon-pack-2.0-original.css" />
+	<link rel="stylesheet" href="css/jqm-icon-pack-fa.css" />
+	
+	
+	
+    </head>
+<body>
+	
+<!-- HOME -->
+<div data-role="page" id="home" data-title="home"  class="welcomeScreen"data-theme="a">
+		<div data-role="header" data-position="fixed" class="transparent top">
+			<h1>New Path</h1>		
+			<h1>News from the different Side</h1>
+		</div>
+
+		<div data-role="content">
+				
+		</div>
+
+		<div data-role="footer" data-position="fixed" class="transparent bottom">
+			<h1>Slide to continue</h1>
+		</div>
+</div>
+<!-- VIDEOS -->
+<div data-role="page" id="Videos" data-title="Videos" data-theme="a">
+		<div data-role="header" data-position="fixed">
+			<h1>Videos</h1>		
+		</div>
+
+		<div data-role="content">
+				<iframe id="youtube" src="//" frameborder="0" allowfullscreen ></iframe>
+				<div class="ui-grid-b">
+					<iframe id="videoOne" class="smallVideo" src="//" frameborder="0" allowfullscreen ></iframe>
+					<iframe id="videoTwo" class="smallVideo" src="//" frameborder="0" allowfullscreen ></iframe>
+					<iframe id="videoThree" class="smallVideo" src="//" frameborder="0" allowfullscreen ></iframe>
+				</div>
+		</div>
+
+		 <div data-role="footer" data-id="foo1"  data-position="fixed" data-tap-toggle="false" >
+    			<div data-role="navbar"> 
+             			<ul>		
+                 			<li><a href="#News"  data-icon="home">Home</a></li>					
+                 			<li><a href="#Videos" class="ui-btn-active ui-state-persist" data-icon="play" >Videos</a></li> 
+     		  			<li><a href="#Pictures" data-icon="grid">Pictures</a></li>
+     		  			<li><a href="#Facebook" data-icon="facebook">Facebook</a></li> 
+    	      			</ul> 
+        		</div> 
+    		</div>
+</div>
+<!-- PICTURES -->
+<div data-role="page" id="Pictures" data-title="Pictures" data-theme="a">
+		<div data-role="header" data-position="fixed">
+			<h1>Pictures</h1>		
+		</div>
+
+		<div data-role="content">
+			<figure class="imgFigure">
+				<img id="mainPicture" src="loading.gif" alt="" />		
+				<button id="button" onClick="LoadImg()">Next Image</button>
+			</figure>	
+	
+		</div>
+
+		 <div data-role="footer" data-id="foo1"  data-position="fixed" data-tap-toggle="false" >
+    			<div data-role="navbar"> 
+             			<ul>		
+                 			<li><a href="#News"  data-icon="home">Home</a></li>
+                 			<li><a href="#Videos"  data-icon="play" >Videos</a></li> 
+     		  			<li><a href="#Pictures" class="ui-btn-active ui-state-persist" data-icon="grid">Pictures</a></li>
+     		  			<li><a href="#Facebook" data-icon="facebook">Facebook</a></li> 
+    	      			</ul> 
+        		</div> 
+    		</div>
+</div>
+<!-- FACEBOOK -->
+<div data-role="page" id="Facebook" data-title="Facebook" data-theme="a">
+		<div data-role="header" data-position="fixed">
+			<h1>Facebook</h1>		
+		</div>
+
+		<div data-role="content">
+				<div id="fb-root"></div>
+				<div class="fb-like-box" data-href="https://www.facebook.com/pages/New-Path-tvorbapreklady/381577421931417" data-colorscheme="dark" 					data-show-faces="true" data-header="true" data-stream="true" data-show-border="true" width="90%" height="500"></div>
+		</div>
+
+		 <div data-role="footer" data-id="foo1"  data-position="fixed" data-tap-toggle="false" >
+    			<div data-role="navbar"> 
+             			<ul>		
+                 			<li><a href="#News"  data-icon="home">Home</a></li>
+                 			<li><a href="#Videos"  data-icon="play" >Videos</a></li> 
+     		  			<li><a href="#Pictures"  data-icon="grid">Pictures</a></li>
+     		  			<li><a href="#Facebook" class="ui-btn-active ui-state-persist" data-icon="facebook">Facebook</a></li> 
+    	      			</ul> 
+        		</div> 
+    		</div>
+</div>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/main.js"></script>        
+<script src="js/jquery.mobile-1.1.0.min.js"></script>
+
+
+</body>
+
+</html>

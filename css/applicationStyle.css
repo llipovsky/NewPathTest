@@ -1,0 +1,131 @@
+/* WELCOME SCREEN */
+.transparent{
+	background: transparent;
+	border: none;
+}
+
+.top{
+	position: fixed;
+	top: 0;
+}
+
+.bottom{
+	position: fixed;
+	bottom: 0;
+}
+
+
+.welcomeScreen{
+background-image: url('../images/welcomePicture.jpeg'); 
+background-attachment: fixed; 
+background-repeat:repeat-y;
+background-size : cover;
+height: 100%;
+width: 100%;
+max-height: 80.5%;
+position: fixed; 
+z-index: 0;
+}
+
+/* SPECIAL STYLE */
+blockquote, q {
+	
+	quotes: none;
+   
+	margin: 0;
+	padding: 0;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+
+}
+
+.textTab{
+	padding-left: 1.5em;
+}
+ /* ARTICLE */
+.articleContent{
+overflow: auto;
+position: absolute;
+height: 100%;
+width: 100%;
+}
+
+.ui-footer .ui-btn-right {
+}
+.articleContent{
+position: relative;
+
+}
+.articleContent > table > tbody > tr > td > font > br {
+  display: none;
+}
+.articleContent > table > tbody > tr > td > font > br + div {
+  display: none;
+}
+.articleContent * {
+  font-size: medium !important;
+}
+
+.small-text {
+font-size: small !important;
+}
+
+
+.imgFigure img {
+    width  : 100%;
+    height : auto;
+}
+
+.imgFigure{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40%;
+	max-height: 50%;
+}
+@media  only screen and (max-width: 480px) {
+.imgFigure{
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	
+	}
+
+}
+
+.articleContent iframe{
+width: auto;
+height: 20em;
+}
+
+.articleContent img{
+width  : 90%;
+height : auto;
+}
+
+#youtube{
+width: auto;
+height: auto;
+}
+
+.smallVideo{
+width: auto;
+height: 7em;
+}
+
+
+#home h1{
+margin-right: 0px;
+        margin-left: 0px;
+}
+
+
